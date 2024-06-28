@@ -1,0 +1,39 @@
+/* tob bar */
+
+.top-contact, .button-links{
+    font-size: 12px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-contact span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-links{
+    display: flex;
+    gap: 5px;
+}
+
+.social-links >a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+.social-links .icon{
+    width: 10px;
+}
+
+.icon{
+    width: 16px;
+}
