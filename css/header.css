@@ -1,9 +1,15 @@
 /* tob bar */
 
+.top-bar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid var(--gray);
+}
 .top-contact, .button-links{
     font-size: 12px;
     width: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,4 +42,67 @@
 
 .icon{
     width: 16px;
+}
+
+.button-links button{
+    background-color: var(--red);
+    color: var(--white);
+    border: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.button-links button:hover{
+    color: var(--red);
+    background-color: #f1f1f1;
+}
+
+/* menu bar */
+
+.menu-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu-bar img{
+    width: 120px;
+}
+.menu-icon{
+    width: 30px;
+    color: var(--red);
+    cursor: pointer;
+}
+
+.desktop-nav{
+    display: none;
+}
+.desktop-nav ul{
+    display: flex;
+    gap: 15px;
+
+}
+
+
+
+@media screen and (min-width:834px){
+    .top-bar{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .top-contact{
+        justify-content: start;     
+    }
+    .button-links{
+        justify-content: end;   
+    }
+
+    .desktop-nav{
+        display: flex;
+    }
+
+    .mobile-nav{
+        display: none;
+    }
 }
